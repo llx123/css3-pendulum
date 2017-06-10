@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css3钟摆</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		#container{ transition:all 3s;  margin:-20px auto; width:1px; height: 500px; animation: around 8s infinite ease;}
+		#line{width: 1px; height: 360px; background-color: #BBB; margin: auto;}
+		#ball{width: 60px; margin-left:-30px; height:60px; background-color:#D2691E ; border-radius:15px;}
+		@keyframes  around{
+			0% {transform: rotate(38deg ); transform-origin: top;}
+			50% {transform: rotate(-38deg);  transform-origin: top}
+			100%{transform: rotate(38deg); transform-origin: top}
+		}
+	</style>
+</head>
+<body>
+<div id="container">
+    <div id="line"></div>
+    <div id="ball"></div>    
+</div>
+</body>
+</html>
